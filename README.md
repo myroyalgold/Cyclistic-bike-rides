@@ -78,47 +78,47 @@ I downloaded dataset covering bike rides between April 2023 to March 2024 for th
 
 #### Preparation of Rstudio for the Analysis
 
-Installation and loading of Required Packages:
+Installation and loading of Required Packages:  
 #installation of packages  
 install.packages("tidyverse")  
 install.packages("janitor")  
 install.packages("lubridate")  
 install.packages("ggplot2")
 
-#loading the packages
-library(tidyverse)
-library(janitor)
-library(lubridate)
-library(dplyr)
-library(ggplot2)
+#loading the packages  
+library(tidyverse)  
+library(janitor)  
+library(lubridate)  
+library(dplyr)  
+library(ggplot2)  
 library(scales)
 
-#I imported the dataset and renamed them as follows(cyclistdata = cd)
-cd_1 <- read.csv("202304-divvy-tripdata.csv")
-cd_2 <- read.csv("202305-divvy-tripdata.csv")
-cd_3 <- read.csv("202306-divvy-tripdata.csv")
-cd_4 <- read.csv("202307-divvy-tripdata.csv")
-cd_5 <- read.csv("202308-divvy-tripdata.csv")
-cd_6 <- read.csv("202309-divvy-tripdata.csv")
-cd_7 <- read.csv("202310-divvy-tripdata.csv")
-cd_8 <- read.csv("202311-divvy-tripdata.csv")
-cd_9 <- read.csv("202312-divvy-tripdata.csv")
-cd_10 <- read.csv("202401-divvy-tripdata.csv")
+#I imported the dataset and renamed them as follows(cyclistdata = cd)  
+cd_1 <- read.csv("202304-divvy-tripdata.csv")  
+cd_2 <- read.csv("202305-divvy-tripdata.csv")  
+cd_3 <- read.csv("202306-divvy-tripdata.csv")  
+cd_4 <- read.csv("202307-divvy-tripdata.csv")  
+cd_5 <- read.csv("202308-divvy-tripdata.csv")  
+cd_6 <- read.csv("202309-divvy-tripdata.csv")  
+cd_7 <- read.csv("202310-divvy-tripdata.csv")  
+cd_8 <- read.csv("202311-divvy-tripdata.csv")  
+cd_9 <- read.csv("202312-divvy-tripdata.csv")  
+cd_10 <- read.csv("202401-divvy-tripdata.csv")  
 cd_11 <- read.csv("202402-divvy-tripdata.csv")
 cd_12 <- read.csv("202403-divvy-tripdata.csv")
 
-#merging data in to a single data set called bike_rides
-bike_rides <- rbind(cd_1,cd_2,cd_3,cd_4,cd_5,cd_6,cd_7,cd_8,cd_9,cd_10,cd_11,cd_12)
+#merging data in to a single data set called bike_rides  
+bike_rides <- rbind(cd_1,cd_2,cd_3,cd_4,cd_5,cd_6,cd_7,cd_8,cd_9,cd_10,cd_11,cd_12)  
 head(bike_rides)
 
-#checking the structure of the dataset
-dim(bike_rides)
+#checking the structure of the dataset  
+dim(bike_rides)  
 glimpse(bike_rides)
 
 
-#Process: checking and removing empty columns and rows using janitor
-bike_rides <- remove_empty(bike_rides, which = c('cols'))
-bike_rides <- remove_empty(bike_rides, which = c('rows'))
+#Process: checking and removing empty columns and rows using janitor  
+bike_rides <- remove_empty(bike_rides, which = c('cols'))  
+bike_rides <- remove_empty(bike_rides, which = c('rows'))  
 dim(bike_rides)
 
 # Data Manipulation
