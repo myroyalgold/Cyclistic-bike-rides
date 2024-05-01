@@ -58,18 +58,18 @@ Understand how annual members and casual riders use Cyclistic bikes differently.
 ### Data Sources: Link to Cyclistic Data:https://divvy-tripdata.s3.amazonaws.com/index.html
 
 ### Dataset Downloaded
-202304-divvy-tripdata.csv
-202305-divvy-tripdata.csv
-202306-divvy-tripdata.csv
-202307-divvy-tripdata.csv
-202308-divvy-tripdata.csv
-202309-divvy-tripdata.csv
-202310-divvy-tripdata.csv
-202311-divvy-tripdata.csv
-202312-divvy-tripdata.csv
-202401-divvy-tripdata.csv
-202402-divvy-tripdata.csv
-202403-divvy-tripdata.csv
+- 202304-divvy-tripdata.csv
+- 202305-divvy-tripdata.csv
+- 202306-divvy-tripdata.csv
+- 202307-divvy-tripdata.csv
+- 202308-divvy-tripdata.csv
+- 202309-divvy-tripdata.csv
+- 202310-divvy-tripdata.csv
+- 202311-divvy-tripdata.csv
+- 202312-divvy-tripdata.csv
+- 202401-divvy-tripdata.csv
+- 202402-divvy-tripdata.csv
+- 202403-divvy-tripdata.csv
 
 
 ### Steps Followed after Downloading the Dataset into my Computer:
