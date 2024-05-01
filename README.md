@@ -79,10 +79,10 @@ I downloaded dataset covering bike rides between April 2023 to March 2024 for th
 #### Preparation of Rstudio for the Analysis
 
 Installation and loading of Required Packages:
-#installation of packages
-install.packages("tidyverse")
-install.packages("janitor")
-install.packages("lubridate")
+#installation of packages  
+install.packages("tidyverse")  
+install.packages("janitor")  
+install.packages("lubridate")  
 install.packages("ggplot2")
 
 #loading the packages
